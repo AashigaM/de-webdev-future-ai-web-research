@@ -6,7 +6,7 @@
 
 ## Project Overview
 
-This project was built for my Dual Enrollment (DE) Web Page Development course as a research-backed digital showcase titled "Future AI: Exploring Artificial Intelligence." It synthesizes core subfields of modern computer science—including Machine Learning, Natural Language Processing (NLP), and Computer Vision—alongside real-world case studies in bio-engineering and autonomous systems. The primary technical focus was on executing advanced CSS multi-column layouts, card grid systems, visual hierarchy, and integrating cited academic research into a clean web interface.
+This project was built for my Dual Enrollment (DE) Web Page Development course as a research-backed digital showcase titled "Future AI: Exploring Artificial Intelligence." It synthesizes core subfields of modern computer science--including Machine Learning, Natural Language Processing (NLP), and Computer Vision--alongside real-world case studies in bio-engineering and autonomous systems. The primary technical focus was on executing advanced CSS multi-column layouts, card grid systems, visual hierarchy, and integrating cited academic research into a clean web interface.
 
 ## Key Technical Skills Demonstrated
 
