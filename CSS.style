@@ -1,0 +1,293 @@
+/* Basic reset so every browser starts with the same spacing */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Main page styling and default text settings */
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    line-height: 1.7;
+    background-color: #f7f5fa;
+    color: #3b3742;
+    padding-bottom: 80px;
+}
+
+
+/* Header section that introduces the topic */
+.main-header {
+    text-align: center;
+    padding: 80px 20px 40px 20px; 
+    background-color: #eae5f5;
+    margin-bottom: 60px; 
+    border-bottom: 1px solid #dcd5eb;
+}
+
+
+/* Small label above the main title */
+.pre-heading {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: #8c7ea3;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+
+/* Main page title styling */
+.main-header h1 {
+    font-family: Georgia, Garamond, serif;
+    font-size: 2.6rem;
+    color: #261f30;
+    font-weight: 400;
+    max-width: 800px;
+    margin: 0 auto 16px auto;
+}
+
+
+/* Subtitle keeps the introduction smaller and easier to read */
+.subtitle {
+    font-size: 1.05rem;
+    color: #5d546b;
+    max-width: 650px;
+    margin: 0 auto 30px auto;
+}
+
+
+/* Navigation links between sections */
+.anchor-nav {
+    margin-top: 20px;
+}
+
+
+.anchor-nav a {
+    color: #4c3d63;
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding-bottom: 4px;
+    border-bottom: 1px solid transparent;
+}
+
+
+/* Adds a small underline effect when hovering */
+.anchor-nav a:hover {
+    border-color: #8c7ea3;
+}
+
+
+.nav-divider {
+    color: #c5bccc;
+    margin: 0 14px;
+}
+
+
+/* Centers the main content and limits how wide it becomes */
+.content-container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+
+/* Creates spacing between the major webpage sections */
+.section-block {
+    margin-bottom: 80px;
+}
+
+
+/* Places section numbers and headings next to each other */
+.section-meta-header {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    margin-bottom: 30px;
+}
+
+
+/* Section numbering style */
+.section-num {
+    font-family: Georgia, serif;
+    font-style: italic;
+    color: #8c7ea3;
+}
+
+
+/* Section heading style */
+.section-meta-header h2 {
+    font-family: Georgia, Garamond, serif;
+    font-size: 1.6rem;
+    color: #261f30;
+}
+
+
+
+/* FLEXBOX LAYOUT
+   Used to place the AI cards evenly across the page */
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 28px;
+}
+
+
+/* Individual AI information cards */
+.flex-card {
+    flex: 1; /* Makes each card take equal space */
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid #e8e2f2;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+
+/* Slight movement effect when hovering over cards */
+.flex-card:hover {
+    transform: translateY(-4px);
+}
+
+
+/* Controls the image area inside each card */
+.card-media-wrapper {
+    position: relative;
+    height: 190px;
+    overflow: hidden;
+    background-color: #f7f5fa;
+}
+
+
+/* Makes images fill the card without stretching */
+.card-display-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* Small credit box placed over the image */
+.credit-badge-box {
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    background-color: rgba(255,255,255,0.92);
+    padding: 3px 8px;
+    font-size: 0.7rem;
+}
+
+
+/* Adds spacing around card text */
+.card-inner-text {
+    padding: 24px;
+}
+
+
+.flex-card h3 {
+    font-family: Georgia, serif;
+    color: #261f30;
+}
+
+
+.card-tag {
+    font-size: 0.75rem;
+    color: #8c7ea3;
+    text-transform: uppercase;
+}
+
+
+/* Second layout section using FLOAT
+   The image moves left and allows text to wrap around it */
+.float-section {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+}
+
+
+/* Float lets the paragraphs flow beside the image */
+.image-wrapper {
+    float: left;
+    width: 220px;
+    margin-right: 28px;
+    margin-bottom: 12px;
+}
+
+
+/* Keeps the AI diagram inside its container */
+.ai-framework-img {
+    width: 100%;
+    display: block;
+    border-radius: 6px;
+}
+
+
+/* Citation box underneath the floated image */
+.image-credit-card {
+    margin-top: 10px;
+    padding: 10px 12px;
+    background-color: white;
+    border: 1px solid #dcd5eb;
+}
+
+
+/* Formats the text paragraphs */
+.docs-text {
+    margin-bottom: 18px;
+    color: #3b3742;
+    text-align: justify;
+}
+
+
+/* Clears the float so later sections do not overlap */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+
+/* Works cited section styling */
+.citation-section {
+    background-color: #eae5f5;
+    padding: 40px;
+    border-radius: 8px;
+}
+
+
+.citation-list {
+    list-style-type: none;
+    padding-left: 24px;
+}
+
+
+/* Space between each citation */
+.citation-list li {
+    margin-bottom: 14px;
+}
+
+
+
+/* Back to top button placement */
+.back-to-top-wrapper {
+    text-align: center;
+    margin: 50px 0 20px;
+}
+
+
+/* Styled button that returns user to the beginning */
+.back-to-top-link {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #dcd5eb;
+    background-color: white;
+    color: #5d546b;
+    text-decoration: none;
+}
+
+
+.back-to-top-link:hover {
+    background-color: #eae5f5;
+}
