@@ -2,7 +2,7 @@
 
 # Dual Enrollment: AI Research & Digital Showcase
 
-**Live Demo:** (https://aashigam.github.io/de-webdev-future-ai-web-research/#top)
+**Live Demo:** https://aashigam.github.io/de-webdev-future-ai-web-research/#top
 
 ## Project Overview
 
